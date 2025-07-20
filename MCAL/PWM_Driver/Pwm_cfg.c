@@ -14,7 +14,7 @@ void TIM2_IRQHandler(void)
 
     // Ví dụ: đặt breakpoint, bật LED, debug, v.v.
     // printf("PWM Channel 0 interrupt/callback!\n");
-    GPIO_ReSetBits(GPIOC, GPIO_Pin_13);
+    //GPIO_ReSetBits(GPIOC, GPIO_Pin_13);
     valcheck++;
     // ngắt quay lại học, nhưng cũng nói qua, thằng này kiểu khi có ngắt xảy ra, cụ thể là hàm
     Pwm_EnableNotification(0, PWM_RISING_EDGE); // hoặc PWM_RISING_EDGE, PWM_FALLING_EDGE
